@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  font-family: 'Hubballi', cursive;
+}
+.about-subdiv {
+  background-color: blueviolet;
+  padding-left: 5rem;
+}
+
+.about-subtext {
+  display: inline-block;
+}
+
+.about-subspan {
+  padding-left: 5rem;
+}
+
+.about-div {
+  display: flex;
+  color: white;
+}
+
+.about-div1 {
+  width: 30%;
+  height: 70%;
+  color: white;
+  font-size: 7rem;
+  margin: 3rem 3rem 3rem 0;
+}
+
+.about-div2 {
+  width: 70%;
+  height: 70%;
+  padding: 5rem;
+  font-size: 1rem;
+}
+
+.animate-text {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.carousel-img{
+  width: 100vw;
+  height: 80vh;
+}
