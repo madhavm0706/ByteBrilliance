@@ -53,7 +53,7 @@ function WhyChooseUs() {
             initial={{x:0, opacity: 0}}
             whileInView={{x:0, opacity:1}}
             viewport={{once: false}}
-            transition={{duration:3.0}}
+            transition={{duration:2.0}}
             >
             <div class="absolute top-0 left-0 w-full mx-auto h-[300px] flex items-center justify-center">
               <p style={{ "fontFamily": "JejuGothic" }} class="w-2/3 md:w-4/5 mx-auto text-center text-white headtext1  ">WHY CHOOSE US?</p>
@@ -62,10 +62,10 @@ function WhyChooseUs() {
             </motion.div>
             
             <motion.div
-            initial={{x:-300, opacity: 0}}
-            whileInView={{x:0, opacity:1}}
+            initial={{y:100, opacity: 0}}
+            whileInView={{y:0, opacity:1}}
             viewport={{once: false}}
-            transition={{duration:2.0}}
+            transition={{duration:1.0}}
             >
             
             <p class="text-center text-white headtext2">The pragmatic choice for your business success</p>
