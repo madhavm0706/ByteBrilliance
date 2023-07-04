@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../index.css';
-
+import {motion} from 'framer-motion'
 const About = () => {
   useEffect(() => {
     const elements = document.querySelectorAll('.animate-text');
@@ -25,19 +25,51 @@ const About = () => {
   }, []);
 
   return (
-    <div className='about-div'>
-      <div className='about-div1'>
-        <div className='about-subdiv'>
-          <span className='about-subtext animate-text'>who <br /> are</span>
-        </div>
-        <span className='about-subspan animate-text'>we?</span>
-      </div>
-      <div className='about-div2'>
-        Discover the story of ByteBrilliance, founded by tech enthusiasts Charandeep Kapoor and Khushi, who graduated from IIT Kanpur. Their background and expertise ensure that ByteBrilliance remains at the forefront of cutting-edge technology solutions. <br /><br />
-        Discover the story of ByteBrilliance, founded by tech enthusiasts Charandeep Kapoor and Khushi, who graduated from IIT Kanpur. Their background and expertise ensure that ByteBrilliance remains at the forefront of cutting-edge technology solutions. Discover the story of ByteBrilliance, founded by tech enthusiasts Charandeep Kapoor and Khushi, who graduated from IIT Kanpur. Their background and expertise ensure that ByteBrilliance remains at the forefront of cutting-edge technology solutions. Discover the story of ByteBrilliance, founded by tech enthusiasts Charandeep Kapoor and Khushi, who graduated from IIT Kanpur. Their background and expertise ensure that ByteBrilliance remains at the forefront of cutting-edge technology solutions. <br /><br />
-        Discover the story of ByteBrilliance, founded by tech enthusiasts Charandeep Kapoor and Khushi, who graduated from IIT Kanpur. Their background and expertise ensure that ByteBrilliance remains at the forefront of cutting-edge technology solutions.
-      </div>
+    <>
+    <div className='whoweare about-div mx-auto  w-4/5'>
+    <div className="about-div1">
+  <div className="about-subdiv pt-4">
+  <motion.div
+            initial={{x:-200, opacity: 0}}
+            whileInView={{x:0, opacity:1}}
+            viewport={{once: false}}
+            transition={{duration:1.0}}
+            >
+  <div class="lg:flex lg:justify-end">
+    <p style={{"fontFamily":"JejuGothic"}} className="hidden lg:block lg:text-right  pl-10   ">Who <br></br>Are</p>
+    <p style={{"fontFamily":"JejuGothic"}} className=" lg:hidden text-[30px] sm:text-[50px] text-center  text-center   ">Who Are</p>
+
     </div>
+    </motion.div>
+
+  </div>
+  <motion.div
+            initial={{x:0, opacity: 0}}
+            whileInView={{x:0, opacity:1}}
+            viewport={{once: false}}
+            transition={{duration:3.0}}
+            >
+  <div className="text-center lg:text-right lg:w-[80%] ">
+    <p style={{"fontFamily":"JejuGothic"}} className="text-[40px] lg:text-[100px] mt-[-10px] p-0">We?</p>
+  </div>
+  </motion.div>
+</div>
+      <div className='about-div2'>
+        Founded by IIT Kanpur graduates, Khushi Gautam and Charandeep Kapoor, ByteBrilliance is your trusted partner for exceptional tech consultancy services. From captivating web development to seamless mobile experiences, we excel in crafting innovative solutions tailored to your business needs.<br></br><br></br>
+        Beyond web and mobile, we lead in cloud computing, data analytics, and AI, leveraging the latest tech and industry best practices. Our unwavering commitment to excellence drives tangible results, as we understand your objectives and challenges, delivering customized strategies with meticulous attention to detail.<br></br><br></br>
+        Choose ByteBrilliance for a highly skilled team dedicated to your success. We foster collaboration, build lasting relationships, and provide ongoing support in the ever-evolving tech landscape.<br></br><br></br>
+        Unlock your business's digital excellence with ByteBrilliance today.
+      </div>
+
+      
+    </div>
+    <div className='w-4/5 mx-auto flex justify-center items-center h-full ' style={{"marginBottom":"100px"}}>
+    <button class="aboutbtn">
+      <span>Contact Us</span>
+    </button>
+
+  </div>
+  </>
   );
 };
 

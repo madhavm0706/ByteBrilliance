@@ -7,10 +7,10 @@ import { AiFillLinkedin} from 'react-icons/ai';
 import "./Footer.css"
 const Footer = () => {
   return (
-    <footer className="footer-distributed">
+    <footer className="footer-distributed grid grid-cols-1 md:grid-cols-3 gap-8">
       {/* Footer Left */}
-      <div className="footer-left">
-        <div className="logo-image"><img src={logo} alt="Logo" /></div>
+      <div className="justify-center order-2 md:order-none">
+        <div className="logo-image justify-center flex mt-[-23px] "><img src={logo} alt="Logo" /></div>
         <p className="footer-links">
           <a href="#" className="link-1">
             Home
@@ -25,18 +25,18 @@ const Footer = () => {
       </div>
 
       {/* Footer Center */}
-      <div className="footer-center">
+      <div className=" footer-center justify-center">
         <div>
           <i className="fa fa-map-marker"></i>
-          <p>
+          <p >
             <span>444 S. Cedros Ave</span> Solana station, Singapore
           </p>
         </div>
-        <div>
+        <div >
           <i className="fa fa-phone"></i>
           <p>+1.555.555.5555</p>
         </div>
-        <div>
+        <div >
           <i className="fa fa-envelope"></i>
           <p>
             <a href="mailto:support@company.com">support@ByteBrilliance.com</a>
@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Right */}
-      <div className="footer-right">
+      <div className="footer-right order-1 md:order-none justify-center">
         <p className="footer-company-about">
           <span>About the company</span>
           Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce

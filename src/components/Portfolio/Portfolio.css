@@ -1,66 +1,44 @@
-* {
-  box-sizing: border-box;
-}
 
-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.image-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 100rem;
-}
+
+
 
 .image {
   position: relative;
   width: 100%;
-  padding-bottom: 30rem;
 }
 
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.image:hover .image-overlay {
-  opacity: 1;
-}
+
+
 
 .image-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  bottom:0px;
+  height: auto;
   width: 100%;
   padding: 0.5rem;
-  font-size: 1.5rem;
+  
   color: white;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  transform: translateY(0);
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
-  z-index: 1; /* Ensure the text is in front of the image */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  /* Add opacity transition */
+  z-index: 1;
+  /* Ensure the text is in front of the image */
+  font-family: Hubballi;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+
 }
 
-.image:hover .image-text {
-  transform: translateY(-10%);
-  opacity: 1; /* Make the text visible on hover */
+.imageclass:hover .imagetext {
+  transform: translateY(-30%);
+  opacity: 1;
+  /* Make the text visible on hover */
 }
 
 .image img {
-  height: 100%;
   width: 100%;
   object-fit: cover;
   left: 0;
@@ -74,12 +52,15 @@ body {
 
 .image img:nth-of-type(2) {
   clip-path: var(--clip-start);
-  transition: clip-path 1s linear, transform 0.3s ease; /* Add back the animation */
 }
 
 .image:hover img:nth-of-type(2) {
   clip-path: var(--clip-end);
+  /* transition: clip-path 0.7s linear, transform 0.3s ease; */
+  /* Add back the animation */
+
 }
+
 .portfolio-heading {
   /* display: flex; */
   text-align: center;

@@ -6,19 +6,24 @@ import Portfolio from './components/Portfolio/Portfolio'
 import ServicesSection from './components/services/ServicesSection'
 import Footer from './components/Footer'
 import ContactSection from './components/Contact'
-import './App.css'
+import './App.css';
+import WhyChooseUs from './components/WhyChooseUs'
 
 function App() {
 
   return (
     <>
       <Navbar/>
-      <Services/>
-      <About/>
+         <Services/>
+       <About/>
       <ServicesSection/>
       <Portfolio/>
-      {/* <ContactSection/> */}
-      <Footer/>
+      <WhyChooseUs />
+
+      <ContactSection/>
+      <Footer/> 
+
+      
     </>
   )
 }

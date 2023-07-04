@@ -21,10 +21,11 @@
   justify-content: center;
 }
 
+
+
 .service-card {
-  position: relative; /* Add position relative */
-  width: 300px;
-  height: 400px; /* Increase the card height */
+  /* position: relative; Add position relative */
+  height: 80%; /* Increase the card height */
  
   margin: 10px;
   background-color: #ffffff;
@@ -44,10 +45,12 @@ object-fit: cover;
 
 }
 
+
+
 .service-card:hover {
   transform: scale(1.05);
  /* Set border color to purple */
-  border:3px solid purple
+  border:3px solid #C04BF2
 }
 
 .service-card img {
@@ -62,61 +65,112 @@ object-fit: cover;
 }
 
 .service-card:hover img {
-  transform: scale(1.3);
+  transform: scale(1.1);
  
-  border:2px solid purple
 }
 
 .service-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: #000000; /* Set text color to black */
-  transition: color 0.3s ease;
+  
+  transition: color 0.5s ease;
+  font-family: Hubballi;
+font-size: 22px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
 .service-card:hover h3 {
-  color: #000000; /* Change text color on hover to purple */
-  font-size: larger;
-  font-weight: 800;
+  color: #C04BF2; /* Change text color on hover to purple */
+  
+}
+
+.service-card:hover .title{
+  border-bottom: 1px solid #C04BF2 ;
+  width: 90%;
 }
 
 .service-card p {
-  font-size: 14px;
-  color: #000000; /* Set text color to black */
+  
   transition: color 0.3s ease;
+  font-family: Hubballi;
+font-size: 20px;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
 .service-card:hover p {
-  color:purple;/* Change text color on hover to purple */
+  color:#C04BF2;/* Change text color on hover to purple */
   font-weight: 400;
 
 }
 
 .arrow-icon {
   position: absolute;
-  font-size: 24px;
+  visibility: hidden;
+  font-size: 20px;
   bottom: 20px;
   right: 30px;
   width: 50px;
   height: 20px;
-  color: #9b59b6; /* Set icon color to purple */
+  color: #C04BF2; /* Set icon color to purple */
   transition: transform 0.3s ease;
   transform-origin: center;
 }
 
 .service-card:hover .arrow-icon {
   transform: translateX(80%);
+  visibility: visible;
    /* Move the arrow to the right and bottom on hover */
 }
 
 .content-container{
   background: #ffffff;
-  padding: 20px;
-  height: 150px;
+  padding: 10px;
+  margin-top: 20px;
+  height: 200px;
+
 }
 
 .title{
-  border-bottom: 2px solid purple
+  border-bottom: 1px solid black ;
+  
+  width: 90%;
+  
+}
+
+.head{
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 76px;
+  letter-spacing: 0em;
+  text-align: center;
+color: white;
+}
+
+@media  screen and (min-width: 1200px) {
+  .head{
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 76px;
+    letter-spacing: 0em;
+    text-align: center;
+  color: white;
+  }
+  
+}
+@media  screen and (max-width: 700px) {
+  .services-section {
+    text-align: center;
+    padding: 5px;
+    background-image: url('./bg.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   
 }

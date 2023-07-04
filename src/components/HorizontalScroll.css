@@ -1,0 +1,18 @@
+
+  
+  .scroll-section-inner {
+    height: 100vh;
+    width: 400vw;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .scroll-section {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 

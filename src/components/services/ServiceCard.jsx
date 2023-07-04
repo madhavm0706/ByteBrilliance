@@ -5,13 +5,14 @@ import "./Services.css"
 
 const ServiceCard = ({ imageSrc, title, description }) => {
   return (
-     <div className="service-card">
-    <div className="image-container">
-      <img src={imageSrc} alt="Service" />
+     <div className="service-card md:w-2/3   ">
+    <div className="image-container w-4/5 mx-auto pt-4 pb-4">
+      <img className="" src={imageSrc} alt="Service" />
     </div>
-    <div className="content-container">
+    <div className="content-container w-full bottom-0">
       <h3 className="title">{title}</h3>
-      <p>{description}</p>
+      <br></br>
+      <p className=" ">{description}</p>
       <div className="arrow-icon"><AiOutlineArrowRight/></div>
     </div>
   </div>
