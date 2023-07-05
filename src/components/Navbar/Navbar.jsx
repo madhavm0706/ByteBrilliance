@@ -83,7 +83,7 @@ const NavBar = () => {
 
               </nav>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <button class="hidden lg:block aboutbtn">
+                <button class="hidden lg:block callbtn">
                   <span>Call Now</span>
                 </button>
                 {/* <a
